@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
+</head>
+<body>
+
+<!-- Header -->
+
+<div id="header">
+    <img class="talk_logo" src="image/HTML5_Logo.svg">
+    <h2>Responsive Web Design</h2>
+
+    <p>
+        Mit CSS Flexbox und CSS Media Queries...
+
+    </p>
+</div>
+
+<!-- Navigation -->
+
+<div id="navigation">&nbsp;</div>
+
+<!-- Slides -->
+
+<div id="mainframe">
+
+
+    <div id="Wikipedia" class="slide">
+        <h2><a href="https://de.wikipedia.org/wiki/Responsive_Webdesign">https://de.wikipedia.org/wiki/Responsive_Webdesign</a>
+        </h2>
+
+        <p>Beim Responsive Webdesign (im Deutschen auch responsives Webdesign genannt oder kurz RWD,
+            englisch responsive ‚reagierend‘) handelt es sich um ein gestalterisches und technisches Paradigma zur
+            Erstellung von Websites, so dass diese auf Eigenschaften des jeweils benutzten Endgeräts,
+            vor allem Smartphones und Tabletcomputer, reagieren können.</p>
+
+        <p>Der grafische Aufbau einer „responsiven“ Website erfolgt anhand der Anforderungen des jeweiligen Gerätes,
+            mit dem die Website betrachtet wird.</p>
+
+        <p>Dies betrifft insbesondere die Anordnung und Darstellung einzelner Elemente, wie Navigationen,
+            Seitenspalten und Texte, aber auch die Nutzung unterschiedlicher Eingabemethoden von
+            Maus (klicken, überfahren) oder Touchscreen (tippen, wischen).</p>
+
+        <p>Technische Basis hierfür sind die neueren Webstandards HTML5, CSS3 (hier insbesondere die Media Queries)
+            und JavaScript.</p>
+
+
+        <p class="quote">Quelle: Wikipedia</p>
+    </div>
+
+    <div id="Mobile Anwendungen" class="slide">
+        <h2>Unterschiedliche Versionen für Mobile Geräte und Desktop</h2>
+
+        <p>Siehe <a href="https://mobil.nwzonline.de/">http://mobil.nwzonline.de/</a></p>
+        <p>und <a href="https://www.nwzonline.de/">http://www.nwzonline.de/</a></p>
+
+        <h2>Responsive Lösungen</h2>
+
+        <p>
+            <a href="https://www.newstral.com/">https://www.newstral.com/</a>
+        </p>
+        <p>
+            und <a href="http://news.feed-reader.net/810-oldenburg.html">http://news.feed-reader.net/810-oldenburg
+            .html/</a>
+        </p>
+
+    </div>
+
+    <div id="Media Queries" class="slide">
+
+        <h2>Media Queries</h2>
+        <pre>
+/** Bereich 1: Mobile first */
+
+/** Bereich 2: Intermediate */
+@media only screen and (min-width: 480px) {}
+
+/** Bereich 3: Wide */
+@media only screen and (min-width: 768px) {}
+
+/** Bereich 4: Maximal Width */
+@media only screen and (min-width: 1067px) {}
+
+/** Bereich 5: Print Style */
+@media print {}
+
+        </pre>
+    </div>
+
+
+    <div id="Flex Box" class="slide">
+        <h2>Was ist Flex Box</h2>
+        <p><a target="_blank" href="https://cvan.io/flexboxin5/">https://cvan.io/flexboxin5/</a></p>
+        <h3>Definition des Flex Bereiches</h3>
+        <pre>display:flex;
+        </pre>
+        <p> ..erzeugt Flexboxen aus allen direkten Nachkommen des Elements und richtet die flexiblen Boxen links,
+            rechts, zentriert, oben oder unten aus – und zwar entlang der horizontalen (row) und vertikalen Achse
+            (column).
+
+            Mit space-around und space-between wird der freie Raum zwischen den Flexboxen verteilt.</p>
+        <p>
+
+            <a
+                    target="_blank"
+                    href="https://www.mediaevent.de/css/display-flex.html">https://www.mediaevent.de/css/display-flex
+                .html</a>
+        </p>
+
+        <h3>Flex Elemente</h3>
+        <p>The flex CSS property specifies how a flex item will grow or shrink so as to fit the space available in its
+            flex container. This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.</p>
+
+    </div>
+
+    <div id="Anwendungen" class="slide">
+        <h2>Holy Grail Layout</h2>
+
+        <p> Klassisches 3-spaltiges Layout mit Header und Footer</p>
+        <p><a
+                target="_blank"
+                href="https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/">https://philipwalton
+            .github.io/solved-by-flexbox/demos/holy-grail/</a></p>
+
+
+    </div>
+
+    <!-- SLIDE -------------------------------------------------------------------->
+
+    <div id="Bilder" class="slide">
+        <h2>Die erste einfache Lösung für Bilder &lt;img&gt;</h2>
+
+        <pre>
+image{
+    max-width:100%;
+}
+                 </pre>
+
+        <img src="image/5582185056_91a5af53dd_o.jpg">
+
+        <a
+                href="https://www.flickr.com/photos/haddadi/5582185056/in/photolist-9vha8W-8oU5G9-aprTfR-8oU5Do-4MbThu-8oU8kd-8oQW9V-8oU5zG-8oQTPP-9LAyz4-8oQW4n-8oQXic-gJT5T-6ynYbz-eNr6e-8oQUai-7en2tr-4jCzkb-DMEea-akBdts-8oQU7X-7Hbxsn-55vzfX-crstQ-8eNYM6-TiyG3Y-L6FCC-cHhUJs-cN7L7s-8DVUrm-8oQUSM-8oQUDX-8oU775-amoES8-261WzC-cnEDaS-7f547N-hRdTrN-om5fN-8oQVxZ-7jhV1Y-Shbrv8-6M24f4-6jyfiM-f8sLRD-aiGKgN-pAVQJ-8oU6a3-8oU5UG-8oQWRM">Foto
+            von Imad HADDAD</a>
+    </div>
+
+    <!-- SLIDE -------------------------------------------------------------------->
+
+    <div id="Adaptive Images" class="slide">
+
+        <h2>Adaptive Images</h2>
+
+        <p><a target="_blank" href="http://adaptive-images.com/">http://adaptive-images.com/</a> </p>
+
+        <p>Um Bilder entsprechend der Bildschirmauflösung auszulieferen, und um damit ressourcenschonend zu arbeiten
+            gibt es die Bibliothek Adaptive Images. Bei dieser wird die Anfrage nach einem Bild über die htaccess auf
+            das PHP-Skript mit dem Parameter Bildschirmauflösung geleitet, und dann ein passendes Bild generiert.</p>
+
+        <p>Weitere Details:
+            <a target="_blank"
+               href="http://www.elmastudio.de/programmierung/mit-adaptive-images-bilder-fur-responsive-webdesigns-optimieren/">http://www.elmastudio.de/programmierung/mit-adaptive-images-bilder-fur-responsive-webdesigns-optimieren/</a>
+
+        <p>Interessant ist auch noch mal ein Blick in die Konfiguration am Anfang der Datei adaptive-images.php:</p>
+
+        <pre>
+/* CONFIG */
+$resolutions = array(1382, 992, 768, 480); // the resolution break-points to use (screen widths, in pixels)
+$cache_path = "ai-cache"; // where to store the generated re-sized images. Specify from your document root!
+$jpg_quality = 75; // the quality of any generated JPGs on a scale of 0 to 100
+$sharpen = TRUE; // Shrinking images can blur details, perform a sharpen on re-scaled images?
+$watch_cache = TRUE; // check that the adapted image isn't stale (ensures updated source images are
+re-cached)
+$browser_cache = 60*60*24*7; // How long the BROWSER cache should last (seconds, minutes, hours, days. 7days
+by default)
+/* END CONFIG */
+        </pre>
+
+        <p>Hier sollte $resolutions an unsere Auswahl für die Media Querias angepasst werden ( Bildschirmbreite, nicht
+            Bildbreite),
+            Über $jpg_quality und $sharpen kann experimentiert werden, falls die Bildqualität nicht in Ordnung ist
+            und die beiden anderen Parameter legen fest, wie lange die Bilder gecacht werden($browser_cache) bzw. ob
+            eine Änderung des Originalbildes überwacht werden soll($watch_cache).</p>
+
+    </div>
+
+    <!-- SLIDE -------------------------------------------------------------------->
+
+    <div id="Srcset" class="slide">
+        <h2>img srcset sizes und picture</h2>
+        <p>Srcset ist ein Attribut im &lt;img&gt; Tag im HTML, das von vielen Browsern,
+            aber nicht allen unterstützt wird</p>
+
+        <p>Trotzdem ist der Support schon sehr gross, und der Aufwand sehr gering,
+            Bilder in verschiedenen Größen auszuliefern und die Bandbreite zu reduzieren.</p>
+
+        <p>Parallel zu srcset können die Attribute "sizes" und das tag &lt;picture&gt; verwendet werden </p>
+        <pre>
+<img
+        src="low-density-photo.jpg"
+        srcset="small-photo.jpg 480w, big-photo.jpg 1024w, high-density-photo.jpg 1024w 2x"
+/>
+        </pre>
+        <p>Links</p>
+        <ul>
+            <li><a target="_blank" href="https://caniuse.com/#feat=srcset">https://caniuse.com/#feat=srcset</a></li>
+            <li><a target="_blank" href="https://www.sitepoint.com/responsive-images-part-1-using-srcset/">https://www.sitepoint.com/responsive-images-part-1-using-srcset/</a> </li>
+            <li><a target="_blank" href="https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/</a></li>
+        </ul>
+
+    </div>
+
+    <!-- SLIDE -------------------------------------------------------------------->
+
+    <div id="Offene Punkte" class="slide">
+        <h2>Bilder dynamisch mit Adaptive Images</h2>
+
+        <p>Breakpoints lassen sich in die Konfiguration von Adaptive Images übertragen,
+            für jeden Größenbereich werden passende Bilder erzeugt</p>
+
+        <h2>Fonts</h2>
+        <p>Fonts sollten in der Regel analog zum Browser mit 1 rem definiert werden.
+            Bei mobilen Geräten kann es von Vorteil sein, die Schrift etwas größer zu machen.</p>
+
+        <h2>Menü</h2>
+        <p>Es gibt auch CSS-Only Lösungen, um ein Hamburger-Menü darzustellen,
+            meistens wird aber auch Javascript verwendet</p>
+
+    </div>
+
+    <!-- SLIDE -------------------------------------------------------------------->
+
+    <!--<div id="Scope" class="slide">-->
+    <!--<h2>Geltungsbereich von Variablen</h2>-->
+    <!---->
+    <!--<p>Variablen mit var definiert, bleiben im lokalen Bereich, in der Funktion.</p>-->
+    <!--<pre>var myFish = ["angel", "clown", "mandarin", "surgeon"],-->
+    <!--angelschein = false;</pre>-->
+    <!--</div>-->
+    <!---->
+    <!-- SLIDE -------------------------------------------------------------------->
+
+
+    <!-- SLIDE -------------------------------------------------------------------->
+
+    <div id="Ressourcen" class="slide">
+        <h2>Ressourcen</h2>
+        <ul class="links">
+            <li><a target="_blank" href="https://cvan.io/flexboxin5/">https://cvan.io/flexboxin5/</a></li>
+            <li><a target="_blank" href="https://philipwalton.github.io/solved-by-flexbox/">https://philipwalton.github.io/solved-by-flexbox/</a>
+            <li><a target="_blank" href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">https://www.w3schools.com/cssref/css3_pr_mediaquery.asp</a>
+            <li><a target="_blank" href="https://caniuse.com/#feat=flexbox">https://caniuse.com/#feat=flexbox</a>
+            <li><a target="_blank" href="http://adaptive-images.com/">http://adaptive-images.com/</a>
+            <li><a target="_blank"
+                   href="http://www.elmastudio.de/programmierung/mit-adaptive-images-bilder-fur-responsive-webdesigns-optimieren/">http://www.elmastudio.de/programmierung/mit-adaptive-images-bilder-fur-responsive-webdesigns-optimieren/</a>
+            </li>
+            <li><a target="_blank"
+                   href="http://ami.responsivedesign.is/">http://ami.responsivedesign.is/</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- SLIDE ------------------------------------------------------------------ -->
+
+    <!--<div id="Lib" class="slide" style="display:none">-->
+    <!--<h2>CSS Frameworks A-Z</h2>-->
+
+    <!--<div class="js_framework">-->
+    <!--<div class="logo"><img src="http://www.babylonjs.com/img/layout/logo-babylonjs.svg"></div>-->
+    <!--<div class="details">-->
+    <!--<div class="link">-->
+    <!--<a target="_blank" href="http://www.babylonjs.com/" title="">http://www.babylonjs.com/</a>-->
+    <!--</div>-->
+    <!--<div class="title">Babylon JS</div>-->
+    <!--<div class="description">-->
+    <!--Javascript Bibliothek zum Rendern von 3D mit WebGL im Browser-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+    <!-- Vorlage -->
+    <div class="js_framework">
+        <div class="logo"><img src=""></div>
+        <div class="details">
+            <div class="link">
+                <a target="_blank" href="" title=""></a>
+            </div>
+            <div class="title"></div>
+            <div clasS="description">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- End Mainframe -->
+
+<script src="js/functions.js"></script>
+<script src="js/slideshow.js"></script>
+
+<script>
+    var slideshow = new Slideshow();
+    slideshow.init('Responsive Web Design');
+    slideshow.showSlide('Wikipedia');
+    slideshow.loadNavigation('navigation');
+
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,319 @@
+* {
+    box-sizing : border-box;
+    margin     : 0;
+    padding    : 0;
+    border     : 0;
+    font-size  : 20px;
+    target-new : tab ! important;
+    max-width  : 100%;
+    word-wrap  : break-word;
+}
+
+body {
+    width          : 100%;
+    max-width      : 960px;
+    margin:0 auto;
+    height         : 100%;
+    background     : #cc0059;
+    display        : flex;
+    flex-direction : column;
+}
+
+@media screen and (max-width : 960px) {
+    body {
+        background-color : coral;
+    }
+}
+
+img {
+    max-width : 100%;
+}
+
+pre {
+    max-width : 100%;
+    overflow  : hidden;
+    word-wrap : break-word;
+    text-wrap : normal;
+}
+
+#header {
+    flex          : 1 0 80px;
+
+    /*background: blue;*/
+    text-align    : center;
+    padding       : 5px;
+    overflow      : hidden;
+    border-top    : #fff 2px solid;
+    border-bottom : #fff 2px solid;
+
+}
+
+#header img.talk_logo {
+    height : 48px;
+    width  : 48px;
+}
+
+#header h2 {
+    font-family : "Courier New", "Arial", sans-serif;
+    font-size   : 1.1rem;
+    line-height : 20px;
+    color       : orangered;
+    /*text-shadow : 0.1em 0.1em #333;*/
+}
+
+#header p {
+    height      : 20px;
+    line-height : 20px;
+    font-family : "Courier New", "Arial", sans-serif;
+    color       : #66c;
+    text-shadow : 0.01em 0.01em #333;
+}
+
+div#navigation {
+    flex          : 1 1 80px;
+    /* background : navy; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    text-align    : center;
+    padding       : 5px;
+    border-bottom : #fff 2px solid;
+}
+
+#mainframe {
+    /*background: yellow;*/
+    flex : auto;
+}
+
+#mainframe div.slide {
+    /*position      : relative;*/
+    /*top           : 0;*/
+    /*width         : 92%;*/
+    /*overflow-y: auto;*/
+
+    margin        : 10px 20px;
+    padding       : 5px;
+    border-radius : 5px;
+    min-height    : 78%;
+    background    : #f6f6ff;
+    box-shadow    : #adadad 1px 1px;
+}
+
+
+@media screen and (max-width : 480px) {
+    body {
+        background-color : lightgreen;
+        height: 100vh;
+    }
+    div#header{
+        order: 0;
+        flex: 0 0 80px;
+    }
+    div#mainframe{
+        order: 1;
+        flex:auto;
+        overflow-y: auto;
+    }
+    div#navigation{
+        order: 2;
+        flex: 0 0 80px;
+    }
+}
+
+
+
+div.slide h2 {
+    width      : 80%;
+    margin     : 1.8% 10% 3% 10%;
+    text-align : center;
+}
+
+div.slide h3 {
+    width  : 80%;
+    margin : 2% 10% 2% 10%;
+}
+
+div.slide p {
+    width  : 80%;
+    margin : 2% 10% 2% 10%;
+}
+
+div.slide table {
+    width  : 80%;
+    margin : 2% 10% 2% 10%;
+}
+
+div.slide pre {
+    min-width        : 80%;
+    margin           : 2% 10%;
+    color            : #333333;
+    background-color : #f0f0f0;
+    box-shadow       : 1px 1px #f0f0f0;
+}
+
+div.slide span.hint {
+    color : #990000;
+}
+
+div.slide span.code {
+    color : #000099;
+}
+
+div.slide p.quote {
+    font-style : italic;
+}
+
+div.slide ul {
+    width  : 60%;
+    margin : 2% 20% 2% 20%;
+}
+
+div.slide ul li {
+    list-style-type : disc;
+}
+
+div.slide ul.links li {
+    list-style-type : none;
+}
+
+div.slide ul.links li a {
+    text-decoration : none;
+    display         : block;
+    background      : url("../image/link.png") no-repeat scroll left center rgba(204, 204, 204, 127);
+    color           : rgb(153, 0, 0);
+    padding         : 3px 3px 3px 20px;
+    margin-bottom   : 5px;
+    border-radius   : 3px;
+}
+
+div.slide table th,
+div.slide table td {
+    text-align : left;
+    padding    : 2px;
+}
+
+.button {
+    text-decoration       : none;
+    text-align            : center;
+    padding               : 4px 4px;
+    margin                : 0 2px;
+    border                : solid 1px #004f72;
+    -webkit-border-radius : 4px;
+    -moz-border-radius    : 4px;
+    border-radius         : 4px;
+    font                  : 16px Arial, Helvetica, sans-serif;
+    font-weight           : bold;
+    color                 : #e5ffff;
+    background-color      : #3ba4c7;
+    background-image      : -moz-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -webkit-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -o-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -ms-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    filter                : progid:DXImageTransform.Microsoft.gradient(startColorstr='#1982A5', endColorstr='#1982A5', GradientType=0);
+    background-image      : linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    -webkit-box-shadow    : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    -moz-box-shadow       : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    box-shadow            : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+.button.red {
+    background : #990000;
+}
+
+.button:hover {
+    text-decoration       : underline;
+    padding               : 4px 4px;
+    border                : solid 1px #002222;
+    -webkit-border-radius : 4px;
+    -moz-border-radius    : 4px;
+    border-radius         : 4px;
+    font                  : 16px Arial, Helvetica, sans-serif;
+    font-weight           : bold;
+    color                 : #e5ffff;
+    background-color      : #3ba4c7;
+    background-image      : -moz-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -webkit-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -o-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -ms-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    filter                : progid:DXImageTransform.Microsoft.gradient(startColorstr='#1982A5', endColorstr='#1982A5', GradientType=0);
+    background-image      : linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    -webkit-box-shadow    : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    -moz-box-shadow       : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    box-shadow            : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+.button.red:hover {
+    background : #990000;
+}
+
+.button:active {
+    text-decoration       : underline;
+    padding               : 4px 4px;
+    border                : solid 1px #004f72;
+    -webkit-border-radius : 4px;
+    -moz-border-radius    : 4px;
+    border-radius         : 4px;
+    font                  : 16px Arial, Helvetica, sans-serif;
+    font-weight           : bold;
+    color                 : #e5ffff;
+    background-color      : #3ba4c7;
+    background-image      : -moz-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -webkit-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -o-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    background-image      : -ms-linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    filter                : progid:DXImageTransform.Microsoft.gradient(startColorstr='#1982A5', endColorstr='#1982A5', GradientType=0);
+    background-image      : linear-gradient(top, #3ba4c7 0%, #1982a5 100%);
+    -webkit-box-shadow    : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    -moz-box-shadow       : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    box-shadow            : 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+.button.red:active {
+    background : #990000;
+}
+
+.js_framework {
+    display          : flex;
+    flex-direction   : row;
+    background-color : #fff;
+    border-radius    : 5px;
+    margin-bottom    : 10px;
+}
+
+.js_framework .logo {
+    flex : 0 0 150px;
+}
+
+.js_framework .logo img {
+    max-width : 100%;
+}
+
+.js_framework .details {
+    flex    : auto;
+    padding : 5px;
+}
+
+.js_framework .details .link {
+
+    text-align : right;
+}
+
+.js_framework .details .link a {
+
+    font-size       : 0.9rem;
+    font-style      : italic;
+    color           : #999;
+    text-decoration : underline
+}
+
+.js_framework .details .title {
+    font-weight     : 700;
+    font-size       : 1.1rem;
+    text-decoration : underline;
+    margin-bottom   : 5px;
+
+}
+
+.js_framework .details .description {
+}
