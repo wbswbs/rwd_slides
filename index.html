@@ -37,7 +37,33 @@
 
 <!-- Navigation -->
 
-<div id="navigation">&nbsp;</div>
+<div id="navigation">
+    <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu_list">
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </div>
+</div>
 
 <!-- Slides -->
 
@@ -231,10 +257,10 @@ by default)
 
         <p>Parallel zu srcset können die Attribute "sizes" und das tag &lt;picture&gt; verwendet werden </p>
         <pre>
-<img
-        src="low-density-photo.jpg"
-        srcset="small-photo.jpg 480w, big-photo.jpg 1024w, high-density-photo.jpg 1024w 2x"
-/>
+<!--<img-->
+        <!--src="low-density-photo.jpg"-->
+        <!--srcset="small-photo.jpg 480w, big-photo.jpg 1024w, high-density-photo.jpg 1024w 2x"-->
+<!--/>-->
         </pre>
         <p>Links</p>
         <ul>
@@ -370,7 +396,8 @@ p { font-size: 1em; margin-before: 1em; margin-after: 1em }
     var slideshow = new Slideshow();
     slideshow.init('Responsive Web Design');
     slideshow.showSlide('Wikipedia');
-    slideshow.loadNavigation('navigation');
+//    slideshow.loadNavigation('navigation');
+    slideshow.loadNavigation('menu_list');
 
 </script>
 

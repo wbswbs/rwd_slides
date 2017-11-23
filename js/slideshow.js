@@ -112,19 +112,19 @@ Slideshow.prototype.loadNavigation = function(divID) {
 	//alert(slides.length + 'Slides'); 
 
 	// previousSlide
-	nav_html += '<a class="button red" href="#" onclick="slideshow.previousSlide();">';
-	nav_html += 'Previous</a>';
+	// nav_html += '<a class="button red" href="#" onclick="slideshow.previousSlide();">';
+	// nav_html += 'Previous</a>';
 
 
 	for(var i=0,j=slides.length; i<j; i++){
 	  var slideID =  slides[i].getAttribute('id');
-	  nav_html += '<a class="button" href="#" onclick="slideshow.showSlide(\'' + slideID + '\');">';
-	  nav_html += slideID + '</a>';
+	  nav_html += '<a href="#" onclick="slideshow.showSlide(\'' + slideID + '\');"><li>';
+	  nav_html += slideID + '</li></a>';
 	};
 
 	// Next Slide
-	nav_html += '<a class="button red" href="#" onclick="slideshow.nextSlide();">';
-	nav_html += 'Next</a>';
+	// nav_html += '<a class="button red" href="#" onclick="slideshow.nextSlide();">';
+	// nav_html += 'Next</a>';
 
 	var navigation_container = document.getElementById(divID);
     navigation_container.innerHTML = nav_html;
