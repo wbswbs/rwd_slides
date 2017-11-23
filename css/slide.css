@@ -110,7 +110,7 @@ p {
  *  N A V I G A T I O N
  *****************************************************************************/
 div#navigation {
-    border:1px solid greenyellow;
+    /*border:1px solid greenyellow;*/
     flex          : 1 1 80px;
     position      : relative;
     /* background : navy; */
@@ -266,7 +266,7 @@ div#navigation #menuToggle input {
  *  M O B I L E - F I R S T
  *****************************************************************************/
 body {
-    background-color : lightgreen;
+    background-color : #f9f900;
     height           : 100vh;
 }
 div#navigation {
