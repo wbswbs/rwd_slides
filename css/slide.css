@@ -269,22 +269,22 @@ body {
     background-color : lightgreen;
     height           : 100vh;
 }
-
-div#header {
+div#navigation {
     order : 0;
     flex  : 0 0 80px;
 }
 
+div#header {
+    order : 1;
+    flex  : 0 0 80px;
+}
+
 div#mainframe {
-    order      : 1;
+    order      : 2;
     flex       : auto;
     overflow-y : auto;
 }
 
-div#navigation {
-    order : 2;
-    flex  : 0 0 80px;
-}
 
 @media screen and (min-width : 480px) {
     body {
